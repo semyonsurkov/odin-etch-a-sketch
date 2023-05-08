@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.grid__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 500px;
+  height: auto;
+  border: 3px solid black;
+  background-color: white;
+}
+
+.grid__cell {
+  height: 30px;
+  width: 30px;
+  flex-grow: 1;
+  box-sizing: border-box;
+  border: 0.5px solid gray;
+  flex-basis: calc(100% / count);
+}
+
+.grid__cell:hover {
+  transition: background-color 0.3s ease-in-out;
+}
